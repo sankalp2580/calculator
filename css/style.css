@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 101vh;
+    background:rgba(6, 6, 56, 0.945);
+}
+.box{
+        margin: auto;
+        background-color: #6d0b34;
+        width: 295px;
+        height: 424px;
+        text-align: center;
+        border-radius: 10px;
+}
+.calculator{
+    position: relative;
+    display: grid;
+}
+.calculator .value{
+    grid-column: span 4;
+    height: 119px;
+    text-align: right;
+    border: none;
+    outline: none;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 1.5%;
+}
+.calculator span{
+    display: grid;
+    width: 61px;
+    height: 61px;
+    color: #fff;
+    background: #247397;
+    place-items: center;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 15%;
+}
+.calculator span:active{
+    background: #3eb410;
+    color: #111;
+    cursor: pointer;
+}
+.calculator span.clear{
+    grid-column: span 2;
+    width: 120px;
+    background: orange;
+    cursor: pointer;
+}
+.calculator span.plus{
+    grid-row: span 2;
+    height: 120px;
+    cursor: pointer;
+}
+.calculator span.equal{
+   background: #03ff10;
+   cursor: pointer;
+}
+
